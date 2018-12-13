@@ -1,0 +1,15 @@
+@import 'partials/reset';
+@import 'modules/typography';
+@import 'modules/mixins';
+@import 'modules/colors';
+@import 'partials/header';
+@import 'partials/mainBanner';
+@import 'partials/courses';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bgColor;
+}
