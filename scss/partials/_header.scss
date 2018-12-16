@@ -8,32 +8,98 @@
 	text-align: left;
 	padding-left: 50px;
 	background: transparent;
-}
 
-.logo-holder .page-logo {
-	position: absolute;
-	width: 20%;
-	top: 26px;
-	left: 20px;
-	height: 100%;
-	z-index: 1;
-}
+	.logo-holder {
+		position: absolute;
+		width: 20%;
+		top: 26px;
+		left: 20px;
+		height: 100%;
+		z-index: 1;
+	 
+		a {
+	 		top: 126px;
+	 		max-width: 200px;
+	 		margin: 0 auto;
+	 		z-index: 130 !important;
+	 		color: #FFF;
+	}
 
-.logo-holder a h3 {
-	 top: 126px;
-	 max-width: 200px;
-	 margin: 0 auto;
-	 z-index: 130 !important;
-	 color: #FFF;
-}
+		img {
+			position: absolute;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+	}
+	}
 
-.page-logo img {
-	position: absolute;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-}
+	.page-title {
+		position: absolute;
+		top: 26px;
+		right: 50px;
+		left: 25px;
+		z-index: 22;
+		font-size: 20px;
+		transition: opacity .2s ease-in-out;
+	
 
+		ul {
+			top: 126px;
+			opacity: 0;
+			position:relative;
+		}
+
+		li {
+			display:inline-block;
+			margin-left:20px;
+			position:relative;
+			float: right;
+		
+			&:before {
+				content: '';
+				position: absolute;
+				right: 100%;
+				margin-right: 10px;
+				top: 6px;
+			}
+
+			&:first-child {
+				float: left !important;
+				text-align: left;
+			}
+
+			&:first-child:before {
+				display:none;
+			}
+		}
+
+		h3 {
+			position: relative;
+		} 
+		
+		a {
+			color:#FFF;
+			font-size: 15px;
+			font-weight: 100;
+			font-family: 'Playfair Display', serif;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			padding: 8px;
+			display: block;
+			position: relative;
+    		transition: all 300ms linear;
+		}
+
+		.page-title-logo {
+			float: left;
+			text-align: left;
+		}
+
+		.portfolio {
+			color:#000;
+		}
+	}
+}
 
 
             
